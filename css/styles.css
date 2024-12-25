@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    /* height: 100vh; */
+    
+    display: grid;
+    grid-template-areas: 
+        "header-main header-main header-main"
+        "middle middle middle"
+        "footer footer footer"
+    ;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    
+}
+
+header {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/juyt_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 80px; */
+    grid-area: header-main;
+    padding: 40px 40px
+}
+
+.middle {
+    grid-area: middle;
+    background-color: blue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: green;
+}
+
+
+img {
+    max-width: 200px;
+    border-radius: 20px;
+    
+}
+
+.header__box-info {
+    background: white;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #43D5FC;
+}
+
+.header__box-info > h2 {
+    padding-bottom: 20px;
+}
+
+.header__box-info > p {
+
+}
